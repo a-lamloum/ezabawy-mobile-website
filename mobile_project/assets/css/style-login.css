@@ -1,0 +1,113 @@
+:root {
+  --al--bg--color: #f9f9f9;
+  --al--tabs--color: #f0f0f0;
+  --al--btn--color: #029cdf;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Tajawal", sans-serif;
+}
+body {
+  background-color: var(--al--bg--color);
+  font-family: "Tajawal", sans-serif;
+}
+.nav__link__custom {
+  width: 144px;
+  background-color: #ffffff00;
+  color: black;
+  align-content: center;
+  border-radius: 15px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav__link__custom:active {
+  background-color: #ffffff;
+}
+.custom-tabs {
+  background-color: var(--al--tabs--color);
+  padding: 10px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin: auto;
+}
+
+.nav-link {
+  height: 55px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.custom-tabs .nav-link {
+  background: #f2f2f2;
+  height: 55px;
+  width: 144px;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  color: #6c757d;
+}
+.custom-tabs .nav-link.active {
+  background: #fff;
+  color: #000;
+}
+.custom-input {
+  position: relative;
+}
+.custom-input input {
+  padding-left: 50px;
+  height: 68px;
+  border-radius: 15px;
+  border: none;
+}
+.custom-input .input-icon {
+  position: absolute;
+  left: 14px;
+  top: 14px;
+  font-size: 27px;
+  color: #cecece;
+}
+.custom-input input:focus + .input-icon {
+  color: #007bff;
+}
+.custom-input input:focus::placeholder {
+  color: transparent;
+}
+.custom-input input:focus::-webkit-input-placeholder {
+  transition: color 0.3s ease-in-out;
+}
+.custom-forget-password {
+  color: #6c757d;
+}
+.custom-login-button {
+  width: 100%;
+  font-size: 1.25rem;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #029cdf;
+  border: none;
+}
+.custom-tab-content {
+  display: flex;
+  gap: 20px;
+}
+.copyright__text {
+  font-size: 10px;
+  width: 100%;
+  position: absolute;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  color: #a4a4a4;
+  bottom: 20px;
+}
+.tab-pane {
+  overflow-y: auto;
+}

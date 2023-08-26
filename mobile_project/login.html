@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== BOXICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style-login.css" />
+
+    <!--=============== google fonts ===============-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&family=Tajawal:wght@400;500;700&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet" />
+    <title>elezaby pharmacy</title>
+    <!-- swup page transition -->
+    <script src="https://unpkg.com/swup@4"></script>
+    <script>
+      const swup = new Swup();
+    </script>
+    <style>
+      /* Define a transition duration during page visits */
+      html.is-changing .transition-fade {
+        transition: opacity 0.25s;
+        opacity: 1;
+      }
+      /* Define the styles for the unloaded pages */
+      html.is-animating .transition-fade {
+        opacity: 0;
+      }
+    </style>
+
+  </head>
+      <body>
+        <div class="container mt-4">
+          <ul class="nav custom-tabs" id="myTabs">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                id="login-tab"
+                data-bs-toggle="tab"
+                href="#login"
+                role="tab"
+                aria-controls="login"
+                aria-selected="true"
+                >Login</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="support-tab"
+                data-bs-toggle="tab"
+                href="#support"
+                role="tab"
+                aria-controls="support"
+                aria-selected="false"
+                >Support</a
+              >
+            </li>
+          </ul>
+          <div class="tab-content p-3 mt-3 d-grid gap-4" id="myTabContent">
+            <div
+              class="tab-pane fade show active d-grid gap-4"
+              id="login"
+              role="tabpanel"
+              aria-labelledby="login-tab">
+              <div class="login-title">
+                <h2 class="">Welcom Back,</h2>
+                <p>Lorem ipsum dolor sit amet consectetur. </p>
+              </div>
+              <form>
+                <div class="mb-3 custom-input">
+                  <span class="input-icon">
+                    <i class="bi bi-person-badge"></i>
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="username"
+                    placeholder="ezaby code " />
+                  <!-- <label for="username" class="form-label">Username</label> -->
+                </div>
+                <div class="mb-3 custom-input">
+                  <span class="input-icon">
+                    <i class="bi bi-lock"></i>
+                  </span>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    placeholder="Password" />
+                  <!-- <label for="password" class="form-label">Password</label> -->
+                </div>
+                <div class="mb-4 float-end">
+                  <a href="#" class="custom-forget-password"
+                    >Forgot Password?</a
+                  >
+                </div>
+                <button
+                  type="submit"
+                  class="btn btn-primary custom-login-button">
+                  Login
+                </button>
+              </form>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="support"
+              role="tabpanel"
+              aria-labelledby="support-tab">
+              <!-- Registration form content goes here -->
+            </div>
+          </div>
+          <h4 class="copyright__text">elezaby Scientific Office and Development</h4>
+        </div>
+
+        <!-- Bootstrap JS (Make sure to include Popper.js before Bootstrap's JS) -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Bootstrap Icons -->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+          rel="stylesheet" />
+          
+      </body>
+    </html>
+  </body>
+</html>

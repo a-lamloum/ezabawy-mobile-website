@@ -1,0 +1,235 @@
+:root {
+  --al--bg--color: #eeeeee;
+  --al--tabs--color: #f0f0f0;
+  --al--btn--color: rgba(0, 173, 181, 0.6);
+  --al--dbtn--color: #043e7d;
+  --green: #0eb500;
+  --oragn-contrast: #ff5722;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Tajawal", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background-color: var(--al--bg--color);
+  font-family: "Tajawal", sans-serif;
+}
+.nav-custom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background-color: var(--al--bg--color);
+  display: flex;
+  overflow-x: auto;
+  z-index: 100;
+}
+
+.nav__link {
+  display: flex;
+  gap: 3px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  min-width: 50px;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: "Tajawal", sans-serif;
+  font-size: 13px;
+  color: #444444;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: background-color 0.05s ease-in-out;
+}
+.nav__link span {
+  font-size: 15px;
+}
+
+.nav__link:hover {
+  color: var(--al--btn--color);
+}
+.nav__link .active {
+  color: var(--al--btn--color) !important;
+  transition: 0.2s ease-in-out;
+}
+
+.card__course {
+  border-radius: 1.25rem;
+  border: none;
+}
+
+/* profile picture  */
+.card__top {
+  background-color: var(--al--btn--color);
+  padding: 10px;
+  margin-top: -20px;
+  border-radius: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+.profile__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-top: 20px;
+  /* margin-left: 20px; */
+}
+.card__top img {
+  width: 112px;
+  border: 3px solid var(--al--bg--color);
+}
+.edit__img {
+  z-index: 1;
+  padding: 5px;
+  background-color: var(--al--bg--color);
+  border: none;
+  border-radius: 20px;
+  width: 37.33px;
+  height: 37.33px;
+  filter: drop-shadow(0px 1px 10px rgba(0, 0, 0, 0.05));
+  position: absolute;
+  top: 141px;
+  right: 140px;
+}
+.edit__img svg {
+  color: var(--al--btn--color);
+}
+.card__top span {
+  color: var(--al--bg--color);
+  font-weight: 300;
+  font-size: 12px;
+  padding: 5px;
+  border-radius: 12px;
+  border: 1px solid var(--al--bg--color);
+}
+.card__top h5 {
+  color: var(--al--bg--color);
+  font-size: 24px;
+  margin-right: 12px;
+}
+.card__summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  flex-direction: row-reverse;
+  margin: 40px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+.card__summary h4 {
+  font-size: xx-large;
+  color: var(--al--bg--color);
+  margin: 0px;
+  font-size: 48px;
+}
+.card__summary span {
+  border: none;
+  font-size: 15px;
+}
+.courses__summary {
+  text-align: center;
+}
+.hours__summary {
+  text-align: center;
+}
+.vertical__line {
+  /* background-color: var(--al--bg--color); */
+  border: 0.1px solid var(--al--bg--color);
+  width: 0.1px;
+  height: 60px;
+}
+.card__top .card__txt {
+  font-size: 12px;
+  display: flex;
+  justify-content: start;
+  direction: rtl;
+}
+.elective__credit__hours {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.credit__hours__div {
+  border-right: 2px solid #c5c5c550;
+  font-size: 30px;
+  color: var(--al--btn--color);
+  width: 70px;
+  margin-left: 10px;
+}
+
+/* course card summary */
+.card__course > .card-link {
+  text-decoration: none;
+  color: var(--al--btn--color);
+}
+.course__expiry {
+  color: #c2c2c2;
+}
+.course__expiry__date {
+  text-decoration: none;
+  color: #c2c2c2;
+  font-size: 0.75rem;
+}
+.card__course > .card-title {
+  font-size: 1rem;
+}
+.coures__instructor > a {
+  font-size: 0.85rem;
+  color: var(--al--btn--color);
+  width: 100%;
+}
+
+.custom-tabs {
+  background-color: var(--al--tabs--color);
+  border-radius: 13px;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 10px;
+  align-items: center;
+  flex-direction: row-reverse;
+  height: 40px;
+  overflow-x: auto;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+}
+
+.custom-tabs::-webkit-scrollbar {
+  display: none;
+}
+.custom-tabs .nav-link {
+  background: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  color: #6c757d;
+  font-size: 15px;
+  font-weight: 700;
+}
+.custom-tabs .nav-link.active {
+  background: #fff;
+  color: var(--al--btn--color);
+  font-weight: 700;
+}
+
+.custom-input input {
+  border: none;
+  padding: 10px;
+  padding-right: 20px;
+}
+.custom-input h6 {
+  font-size: 14px;
+  font-weight: 500;
+}

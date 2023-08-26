@@ -1,0 +1,172 @@
+<!-- notes  -->
+<!-- 
+    > add show more button 
+    > add icon on finished courses ( checked-green )
+-->
+<!-- notes  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== CSS ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/style-dashboard.css" />
+
+    <!--=============== google fonts ===============-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&family=Tajawal:wght@400;500;700&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet" />
+    <title>ezlearn</title>
+    <!-- swup page transition -->
+    <script src="https://unpkg.com/swup@4"></script>
+    <script>
+      const swup = new Swup();
+    </script>
+    <style>
+      /* Define a transition duration during page visits */
+      html.is-changing .transition-fade {
+        transition: opacity 0.25s;
+        opacity: 1;
+      }
+      /* Define the styles for the unloaded pages */
+      html.is-animating .transition-fade {
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe
+        width="100%"
+        height="250px"
+        src="https://www.youtube-nocookie.com/embed/Cd_gzarRD_c?controls=0"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; encrypted-media;  picture-in-picture;"
+        allowfullscreen></iframe>
+    </div>
+    <div class="container-sm mt-4">
+      <!-- course img -->
+
+      <div class="row course__description"></div>
+
+      <div class="tab-content" id="myTabContent">
+        <div
+          class="tab-pane fade show active curriculum__scroll"
+          id="curriculum-tab-pane"
+          role="tabpanel"
+          aria-labelledby="home-tab"
+          tabindex="0">
+          <div class="section-title fw-bold">
+            <a href="#" class="">Current Lesson</a>
+          </div>
+
+          <!-- current Lesson  -->
+          <div class="card mt-2 card__unit">
+            <div class="card-body d-flex gap-2 align-items-center mt-0">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                fill="currentColor"
+                class="bi bi-play-circle text-primary"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                  d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z" />
+              </svg>
+              <p class="lesson-title">
+                1. Health benefits and Biochemical impacts of Fasting on
+                Diabetes
+              </p>
+            </div>
+          </div>
+          <!-- finished Lesson  -->
+          <div class="section-title fw-bold">
+            <a href="#" class="">All Lessons</a>
+          </div>
+          <!-- Not finished Lesson  -->
+          <div class="card mt-2 card__unit">
+            <div class="card-body d-flex gap-2 align-items-center mt-0">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                fill="currentColor"
+                class="bi bi-play-circle text-secondary"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                  d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z" />
+              </svg>
+              <p class="lesson-title">
+                1. Health benefits and Biochemical impacts of Fasting on
+                Diabetes
+              </p>
+            </div>
+          </div>
+
+          <div class="card mt-2 card__unit">
+            <div class="card-body d-flex gap-2 align-items-center mt-0">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                fill="currentColor"
+                class="bi bi-play-circle text-secondary"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                  d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z" />
+              </svg>
+              <p class="lesson-title">
+                1. Health benefits and Biochemical impacts of Fasting on
+                Diabetes
+              </p>
+            </div>
+          </div>
+          <!-- Not finished Lesson  -->
+        </div>
+      </div>
+    </div>
+    <div class="Next__unit container">
+      <button class="btn btn-outline-secondary col">
+        <a href="/courses.html" class="all__courses_btn col-4">Course Page </a>
+      </button>
+      <button class="btn btn-primary col-8">
+        Next Lesson
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-arrow-right-circle"
+          viewBox="0 0 16 16">
+          <path
+            fill-rule="evenodd"
+            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+        </svg>
+      </button>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
